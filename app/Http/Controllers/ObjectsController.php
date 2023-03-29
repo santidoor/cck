@@ -15,10 +15,7 @@ class ObjectsController extends Controller
         
     public function zhk_object()
     {
-//        123
-//        123
-//        123
-//        123
+
         $objects_group = DB::table('buildings')
             ->rightJoin('zhk_objects', 'buildings.zhk_object_id', '=', 'zhk_objects.id')
             ->leftJoin(DB::raw('(SELECT
